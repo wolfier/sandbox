@@ -12,5 +12,9 @@ def index(path):
     rel_path = "templates/index.html"
     return make_response(open(os.path.join(script_dir, rel_path)).read())
 
+@app.route("/", subdomain="blog")
+def blog():
+    return "setting up the blog subdomain"
+
 if __name__ == "__main__":
         app.run()
