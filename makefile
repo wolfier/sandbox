@@ -7,3 +7,7 @@ install:
 
 server:
 	python3 app/app.py
+
+restart:
+	service apache2 reload
+	service apache2 restart
