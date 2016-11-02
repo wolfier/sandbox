@@ -7,6 +7,8 @@ app = Flask(__name__)
 
 if config.DEBUG:
 	app.config['SERVER_NAME'] = 'local.dev:5000'
+else
+	app.config['SERVER_NAME'] = 'wolfier.com'
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
