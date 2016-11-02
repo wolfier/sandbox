@@ -11,3 +11,6 @@ server:
 restart:
 	service apache2 reload
 	service apache2 restart
+
+error:
+	tail -100 /var/log/apache2/error.log 
