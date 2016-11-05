@@ -13,4 +13,7 @@ restart:
 	service apache2 restart
 
 error:
-	tail -100 /var/log/apache2/error.log 
+	tail -100 /var/log/apache2/error.log
+
+error-blog:
+	tail -100 /var/log/apache2/blog-error.log 
