@@ -6,7 +6,7 @@ install:
 	python3 -m pip install -r requirements.txt
 
 server:
-	python3 app/app.py
+	python3 run.py
 
 restart:
 	service apache2 reload
