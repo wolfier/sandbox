@@ -1,5 +1,16 @@
+#Mac
 .DS_Store
+
+#Virtual Environment
 venv/
+
+#Flask
+__pycache__
+
+#Anuglar2
+dist/
+node_modules/
+
+#Server Setting
 app.wsgi
 config.py
-__pycache__
